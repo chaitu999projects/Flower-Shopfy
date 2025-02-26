@@ -107,6 +107,7 @@ header .navbar-all-links {
     color: var(--text-color-2);
 }
 
+
 .navbar-brand:hover {
     color: var(--deep-pink);
     transition: .3s;
@@ -131,7 +132,7 @@ header .navbar-all-links {
     width: 27px;
     height: 3px;
     background-color: var(--text-color-light-dark);
-    margin: 3px 0 3px 0;
+    margin: 3px 0;
 }
 
 .navbar-icons-container i {
@@ -141,9 +142,24 @@ header .navbar-all-links {
     color: var(--text-color-light-dark);
 }
 
+
 .navbar-icons-container i:hover {
     color: var(--deep-pink);
     transition: 0.3s;
+}
+
+@media screen and (min-width:300px) and (max-width:768px) {
+    .navbar-brand {
+        font-size: var(--font-md-size);
+    }
+
+    .navbar-icons-container i {
+        font-size: 15px;
+    }
+    
+    .line {
+        width: 20px;
+    }
 }
 /* ===========================  Home Section ======================= */
 .home-section {
