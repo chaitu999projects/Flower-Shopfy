@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    /* ===================== Font Family =========================*/
+    --font-family: 'Quicksand', sans-serif;
+    --font-family-roboto: 'Roboto', sans-serif;
+    /* ===================== Colors =============================*/
+    --primary-color: #ffffff;
+    --secondary-color: #ededed;
+    --very-light-gray: #f6f6f6;
+    --very-light-gray-2: #e1dbdb;
+    --soft-gray: #f0f0f0;
+    --verylight-pink: #fff4fc;
+    /* ================== Text Colors ==========================*/
+    --text-color: #223;
+    --text-color-2: #333;
+    --text-color-light-dark: #666;
+    --text-light-pink: #f166c1;
+    --text-hot-pink: #ff69b4;
+    --deep-pink: #ff61b0;
+
+
+    /* ===================== Spacing =============================*/
+    --spacing: 1rem;
+    /* ===================== Font Sizes ==========================*/
+    --font-sm-size: 1rem;
+    --font-md-size: 1.5rem;
+    --font-lg-size: 2rem;
+    --font-xl-size: 2.5rem;
+    --font-xxl-size: 3rem;
+    /* ===================== Line Height ==========================*/
+    --line-height: 1.5;
+    /* ======================= Font Weight ========================*/
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+    --font-weight-ultra-bold: 800;
+}
+
+/* ============================= Body Styling ==================== */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none !important;
+}
+ li {
+    list-style: none !important;
+ }
+
+ button {
+    cursor: pointer;
+    border:  none;
+ }
+
+ video {
+    width: 100%;
+    object-fit: cover !important;
+ }
+ /* ================= Header Section ======================== */
+ * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family-roboto);
+
+ }
+
+header {
+    display: inline;
+    align-items: center;
+}
+
+header .links-container {
+    position: absolute;
+    top: 65px;
+    left: 0;
+    min-width: 100% !important;
+
+}
+
+header .navbar-all-links {
+    padding-left: 39.5px;
+}
+
+.navbar-nav-container li a {
+    color: var(--text-color-light-dark) !important;
+    font-size: 1.1rem;
+}
+
+.navbar-nav-container li a:hover {
+    color: var(--deep-pink) !important;
+
+}
+
+.navbar-brand {
+    font-size: var(--font-lg-size);
+    font-weight: 700;
+    color: var(--text-color-2);
+}
+
+.navbar-brand:hover {
+    color: var(--deep-pink);
+    transition: .3s;
+}
+.header-dot {
+    font-size: 1.8rem;
+    color: var(--deep-pink);
+}
+
+.hamburgerBtn {
+    padding: 5px;
+    border: none;
+
+}
+
+.hamBurgerIcon {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4px;
+}
+.line {
+    width: 27px;
+    height: 3px;
+    background-color: var(--text-color-light-dark);
+    margin: 3px 0 3px 0;
+}
+
+.navbar-icons-container i {
+    cursor: pointer;
+    font-size: 18px;
+    margin-right: 7px;
+    color: var(--text-color-light-dark);
+}
+
+.navbar-icons-container i:hover {
+    color: var(--deep-pink);
+    transition: 0.3s;
+}
+/* ===========================  Home Section ======================= */
+.home-section {
+    min-width: 100%;
+    min-height: 100vh;
+    background: url("./images/home-bg.jpg") no-repeat center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home-section .home-heading {
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-xxl-size);
+    color: var(--text-color);
+}
+
+.home-section .home-small-heading {
+    font-size: var(--font-md-size);
+    color: var(--text-hot-pink);
+}
+
+.home-description {
+    font-size: var(--font-sm-size);
+    color: var(--text-color-light-dark);
+}
+
+.home-section button {
+    padding: 10px;
+    width: 140px;
+}
+
+/* ================= About Section ==================== */
+.about-section {
+    margin: 20px 0px;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.about-section video {
+    min-height: 50vh;
+}
+.about-section .video-mix-text {
+    position: absolute;
+    min-width: 100%;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px 20px;
+    text-align: center;
+    font-size: var(--font-md-size);
+    font-weight: bold;
+    color: black;
+    mix-blend-mode: screen;
+    font-family: var(--font-family);
+}
+
+
+@media screen and (min-width: 768px) {
+    .about-section {
+        position: relative;
+        overflow: hidden !important;
+    }
+    .about-section .video-mix-text {
+        font-size: var(--font-lg-size);
+        position: absolute;
+        top: 55%;
+        left: 30%;
+        text-align: center;
+        overflow: hidden !important;
+        
+    }
+}
+
+.about-section .about-us-hed {
+    padding: 15px 0px;
+    background-color: var(--verylight-pink);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-lg-size);
+
+}
+
+.about-section .home-description {
+    font-size: var(--font-sm-size);
+}
+
+.about-section .about-us {
+    font-weight: var(--font-weight-bold);
+}
+
+.about-section button {
+    padding: 10px 0px ;
+    width: 140px;
+}
+
+/* ================== Futured Section ================== */
+.futures-section {
+    background-color: var(--soft-gray);
+
+}
+
+.futures-section .image-png {
+    width: 50px;
+}
+
+/* ================= Product Section ==================== */
+.title-section {
+    margin: 20px 0px;
+    background-color: var(--verylight-pink);
+    text-transform: uppercase;
+}
+
+.title.section h2 {
+    font-weight: var(--font-weight-bold);
+    color: var(--primary-color);
+}
+
+ .title-section span {
+    color: var(--text-light-pink);
+}
+
+.offer {
+    position: absolute;
+    left: 5px;
+    background-color: var(--primary-color);
+    padding: 8px;
+    color: var(--verylight-pink);
+    font-weight: var(--font-weight-bold);
+    border-radius: 3px;
+}
+
+.product-section .product-image {
+    width: 100%;
+    height: 400px !important;
+    object-fit: fill;
+}
+
+.product-section > .product-title, .product-price {
+    font-weight: var(--font-weight-bold) !important;
+}
+
+.product-section .product-title {
+    font-size: 1.5rem;
+}
+
+.product-section .product-price {
+    font-size: 1.1rem;
+    color: var(--deep-pink);
+}
+
+.product-section del {
+    margin-left: 5px;
+}
+
+/*=========================== Reviews Section ========================== */
+.reviews-section {
+    padding: 20px 0px;
+    margin: 20px 0px;
+    text-align: left !important;
+}
+
+.reviews-title {
+    background-color: var(--verylight-pink);
+}
+.testimonial-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+.testimonial-card:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+.stars {
+    color: #e91e63;
+    font-size: 18px;
+}
+.testimonial-text {
+    color: #666;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.testimonial-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.testimonial-footer img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.testimonial-footer h6 {
+    margin: 0;
+    font-weight: bold;
+}
+.testimonial-footer p {
+    margin: 0;
+    font-size: 12px;
+    color: #777;
+}
+.quote-icon {
+    font-size: 70px;
+    color: var(--very-light-gray-2);
+}
+
+/* ============================== Contact Form ========================== */
+.contact-form {
+    background: var(--primary-color);
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+form {
+    padding: 20px 30px;
+}
+input, textarea {
+    margin-bottom: 30px;
+}
+.form-control {
+    padding: 10px 5px;
+    border-radius: 5px;
+}
+.feedback-box {
+    padding:0px 5px  40px 5px;
+}
+
+/* ============================= Footer Section ====================== */
+.footer {
+    background: var(--primary-color);
+    padding: 50px 0px 10px 0px;
+}
+.footer h4 {
+    font-weight: var(--font-weight-bold);
+}
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer li {
+    padding: 8px 0;
+}
+.footer ul li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+.footer ul li a:hover {
+    color: var(--deep-pink);
+}
+.footer-bottom {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 1.3rem;
+}
+.footer-bottom span {
+    color: var(--deep-pink);
+    font-weight: var(--font-weight-ultra-bold);
+}
